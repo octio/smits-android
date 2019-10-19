@@ -23,6 +23,19 @@ android {
         androidTest.java.srcDirs += 'src/androidTest/kotlin'
     }
     buildTypes {
+        debug {
+            buildConfigField "String", 'BASE_URL', "\"http://${getIP()}:3333/smits/v1/\""
+        }
+        staging {
+            buildConfigField "String", 'BASE_URL', '"https://api.octio.net/smsgw/"'
+        }
+        release {
+            buildConfigField "String", 'BASE_URL', '"https://api.octio.net/smsgw/"'
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
