@@ -1,7 +1,8 @@
-package solutions.octio.smits
+package solutions.octio.smits.features
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import solutions.octio.smits.R
 
 class MainActivity : AppCompatActivity() {
 
