@@ -7,6 +7,8 @@
     <string name="hint_confirm">Confirmar</string>
 
     <string name="authentication_text_email">Preencha o seu e-mail para receber um token de acesso</string>
+    <string name="authentication_text_token">Coloque o token recebido por email</string>
     <string name="authentication_hint_email">E-mail</string>
+    <string name="authentication_hint_token">Token</string>
     <string name="authentication_button_skip">Já tenho um token</string>
 </resources>
