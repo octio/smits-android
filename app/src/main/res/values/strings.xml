@@ -3,4 +3,10 @@
 
     <string name="generic_msg_error">Oops! Alguma coisa não funcionou muito bem</string>
     <string name="generic_msg_connection_error">Problema de conexão. Tente novamente.</string>
+
+    <string name="hint_confirm">Confirmar</string>
+
+    <string name="authentication_text_email">Preencha o seu e-mail para receber um token de acesso</string>
+    <string name="authentication_hint_email">E-mail</string>
+    <string name="authentication_button_skip">Já tenho um token</string>
 </resources>

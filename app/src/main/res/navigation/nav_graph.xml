@@ -3,11 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/authFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="solutions.octio.smits.features.home.presentation.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="solutions.octio.smits.features.auth.presentation.AuthFragment"
+        android:label="AuthFragment"
+        tools:layout="@layout/fragment_auth" />
 </navigation>

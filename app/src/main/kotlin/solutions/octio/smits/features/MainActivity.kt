@@ -1,8 +1,10 @@
 package solutions.octio.smits.features
 
 import android.content.Intent
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
@@ -24,7 +26,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setupActionBarLayout()
         setupNavController()
+    }
+
+    private fun setupActionBarLayout() {
+        supportActionBar?.setBackgroundDrawable(
+            ColorDrawable(
+                ContextCompat.getColor(
+                    this,
+                    R.color.colorActionBar
+                )
+            )
+        )
     }
 
     private fun setupNavController() {
