@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="solutions.octio.smits.features.home.presentation.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="solutions.octio.smits.features.auth.presentation.AuthFragment"
+        android:label=""
+        tools:layout="@layout/fragment_auth">
+        <action
+            android:id="@+id/action_authFragment_to_tokenFragment"
+            app:destination="@id/tokenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tokenFragment"
+        android:name="solutions.octio.smits.features.auth.presentation.TokenFragment"
+        android:label=""
+        tools:layout="@layout/fragment_token" />
+</navigation>
